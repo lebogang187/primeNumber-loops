@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let n = 20;
+
+    let isPrime;
+
+    console.log("Test");
+
+    for(let i = 2; i <= n; i++){
+
+        //write a code that checks if a number is divisible by 1 and itself(prime number)
+        for(let j=i -1; j > 1; j--){//from the current i, loop down and divide by everything
+            if(i%j === 0){
+                isPrime = false;
+                break;
+            }
+            else{
+                isPrime = true;
+            }
+
+        }
+        if(isPrime){
+            console.log(i);
+        }
+    }
+</script>
+</html>
